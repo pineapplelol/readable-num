@@ -1,0 +1,25 @@
+{
+  "name": "ez-num",
+  "version": "1.0.0",
+  "description": "A package to convert numbers to easy words.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pineapplelol/ez-num"
+  },
+  "keywords": [
+    "npm",
+    "package"
+  ],
+  "author": "pineapplelol",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "jest": "^20.0.3"
+  }
+}
