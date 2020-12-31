@@ -1,5 +1,5 @@
 {
-  "name": "ez-num",
+  "name": "pretty-num",
   "version": "1.0.0",
   "description": "A package to convert numbers to easy words.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pineapplelol/ez-num"
+    "url": "git+https://github.com/pineapplelol/pretty-num"
   },
   "keywords": [
     "npm",
