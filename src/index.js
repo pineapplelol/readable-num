@@ -1,4 +1,4 @@
-const POWERS = [
+const WORDS = [
   "thousand",
   "million",
   "billion",
@@ -10,20 +10,11 @@ const POWERS = [
   "octillion",
 ];
 
-exports.prettyNum = (num) => {
-  const [r, p] = _prettyNum(num, 0);
-  if (p == 0) return r.toString();
-  if (p > POWERS.length) {
-    return (
-      r * Math.pow(10, POWERS.length * 3) + " " + POWERS[POWERS.length - 1]
-    );
+exports.prettyTime = (num) => {
+  let i = 0;
+  while (Math.abs(num) > 1000 && i < WORDS.length) {
+    num /= 1000;
+    i++;
   }
-  return r + " " + POWERS[p - 1];
+  return `${num} ${WORDS[i]}`;
 };
-
-function _prettyNum(num, pow) {
-  if (Math.abs(num) < 1000) {
-    return [num, pow];
-  }
-  return _prettyNum(num / 1000, pow + 1);
-}
