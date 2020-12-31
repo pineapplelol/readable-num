@@ -1,4 +1,4 @@
-const POWERS = [
+const WORDS = [
   "thousand",
   "million",
   "billion",
@@ -10,20 +10,17 @@ const POWERS = [
   "octillion",
 ];
 
-exports.prettyNum = (num) => {
-  const [r, p] = _prettyNum(num, 0);
-  if (p == 0) return r.toString();
-  if (p > POWERS.length) {
-    return (
-      r * Math.pow(10, POWERS.length * 3) + " " + POWERS[POWERS.length - 1]
-    );
+/**
+ * returns a pretty string representation of given number
+ *
+ * @param {number} num - number to process into a pretty number string
+ * @param {number} deg - number of floating points in return string, default: 0
+ */
+exports.prettyNum = (num, deg = 0) => {
+  let i = 0;
+  while (Math.abs(num) > 1000 && i < WORDS.length) {
+    num /= 1000;
+    i++;
   }
-  return r + " " + POWERS[p - 1];
+  return `${num.toFixed(deg)} ${WORDS[i]}`;
 };
-
-function _prettyNum(num, pow) {
-  if (Math.abs(num) < 1000) {
-    return [num, pow];
-  }
-  return _prettyNum(num / 1000, pow + 1);
-}
