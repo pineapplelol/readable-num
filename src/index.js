@@ -1,4 +1,5 @@
 const WORDS = [
+  "hundred",
   "thousand",
   "million",
   "billion",
