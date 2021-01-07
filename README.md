@@ -1,1 +1,1 @@
-# ez-num
+# pretty-num
