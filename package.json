@@ -12,9 +12,9 @@
   },
   "author": "pineapplelol",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
+    "babel-cli": "^6.18.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.6.0",
-    "jest": "^20.0.3"
+    "jest": "^27.0.3"
   }
 }
