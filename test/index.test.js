@@ -1,4 +1,4 @@
-const { readableNum } = require("./index");
+const { readableNum } = require("../src/index");
 
 test("confirms less than minNum is unchanged", () => {
   expect(readableNum(88)).toBe("88");
