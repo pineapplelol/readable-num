@@ -1,19 +1,15 @@
 {
-  "name": "pretty-num",
+  "name": "readable-num",
   "version": "1.0.0",
   "description": "A package to convert numbers to easy words.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pineapplelol/pretty-num"
+    "url": "git+https://github.com/pineapplelol/readable-num"
   },
-  "keywords": [
-    "npm",
-    "package"
-  ],
   "author": "pineapplelol",
   "dependencies": {},
   "devDependencies": {
