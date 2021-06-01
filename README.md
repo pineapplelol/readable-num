@@ -6,7 +6,13 @@ Readable num is a simple npm package that turns numbers into easy to read words.
 
 ```js
 const { readableNum } = require("readable-num");
-readableNum(number);
+
+const number = 67567654
+
+readableNum(number);                                // 67.6 million
+readableNum(number, { minNum: 999999999 });         // 67567654
+readableNum(number, { precision: 2 });              // 68 million
+readableNum(number, { minNum: 100, precision: 2 }); // 68 million
 ```
 
 ### Parameters
