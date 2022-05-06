@@ -1,6 +1,6 @@
 {
   "name": "readable-num",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A package to convert numbers to easy words.",
   "main": "index.js",
   "scripts": {
@@ -12,9 +12,9 @@
   },
   "author": "pineapplelol",
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-env": "^1.6.0",
-    "jest": "^27.0.3"
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^28.0.3"
   }
 }
